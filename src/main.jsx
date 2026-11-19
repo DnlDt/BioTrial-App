@@ -1,10 +1,26 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { createBrowserRouter } from "react-router-dom";
+import App from "./App";
+import PaginaInicial from "./paginas/paginaInicial/paginaInicial";
+import PaginaListaTestes from "./paginas/paginaListaTestes/paginaListaTestes";
+import PaginaPerfil from "./paginas/paginaPerfil/paginaPerfil";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export const roteador = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <PaginaInicial />
+      },
+      {
+        path: "/testes",
+        element: <PaginaListaTestes />
+      },
+      {
+        path: "/perfil",
+        element: <PaginaPerfil />
+      }
+    ]
+  }
+]);
