@@ -15,7 +15,11 @@ function BotaoCustomizado(props) {
   }
 
   return (
-    <button className={classes.join(" ")} onClick={props.aoClicar}>
+    <button
+      className={classes.join(" ")}
+      onClick={props.aoClicar}
+      disabled={props.desabilitado}
+    >
       {props.children}
     </button>
   );

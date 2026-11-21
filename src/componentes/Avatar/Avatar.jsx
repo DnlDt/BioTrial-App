@@ -1,20 +1,18 @@
 import "./Avatar.css";
 
 function Avatar(props) {
-  const nomes = props.nome.split(" ");
+  const nomes = (props.nome || "?").trim().split(" ");
 
-  const primeiroNome = nomes[0];
-  const primeiraLetraPrimeiroNome = primeiroNome[0];
+  const primeiraLetraPrimeiroNome = nomes[0][0] || "?";
 
   let primeiraLetraUltimoNome = "";
   if (nomes.length > 1) {
-    const ultimoNome = nomes.at(-1);
-    primeiraLetraUltimoNome = ultimoNome[0];
+    primeiraLetraUltimoNome = nomes.at(-1)[0];
   }
 
   return (
-    <div className="Avatar_root">
-      {primeiraLetraPrimeiroNome + primeiraLetraUltimoNome}
+    <div className="Avatar_root" onClick={props.aoClicar} title={props.nome}>
+      {(primeiraLetraPrimeiroNome + primeiraLetraUltimoNome).toUpperCase()}
     </div>
   );
 }

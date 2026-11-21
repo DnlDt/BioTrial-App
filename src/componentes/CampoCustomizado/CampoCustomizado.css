@@ -1,10 +1,41 @@
 .CampoCustomizado_root {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.CampoCustomizado_obrigatorio {
+  color: var(--cor-erro);
+}
+
+.CampoCustomizado_caixa {
+  position: relative;
+  display: flex;
 }
 
 .CampoCustomizado_input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+.CampoCustomizado_input:focus {
+  outline: 2px solid var(--cor-primaria-clara);
+  border-color: var(--cor-primaria);
+}
+
+.CampoCustomizado_icone {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  cursor: pointer;
 }

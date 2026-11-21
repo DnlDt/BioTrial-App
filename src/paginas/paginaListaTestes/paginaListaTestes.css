@@ -1,0 +1,44 @@
+.PaginaListaTestes_filtros {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+}
+
+.PaginaListaTestes_vazia {
+  text-align: center;
+  margin-top: 48px;
+  color: var(--cor-cinza);
+}
+
+.PaginaListaTestes_erro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  color: var(--cor-erro);
+  padding: 16px;
+}
+
+.PaginaListaTestes_botaoAdicionar {
+  position: fixed;
+  bottom: 64px;
+  right: 16px;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .PaginaListaTestes_filtros {
+    grid-template-columns: 1fr;
+  }
+}

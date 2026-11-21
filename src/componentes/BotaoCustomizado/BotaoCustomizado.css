@@ -1,16 +1,19 @@
 .BotaoCustomizado_root {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .BotaoCustomizado_root:hover {
   opacity: 0.9;
 }
 
-.BotaoCustomizado_root:active {
-  opacity: 1.1;
+.BotaoCustomizado_root:disabled {
+  opacity: 0.6;
+  cursor: wait;
 }
 
 .BotaoCustomizado_primario {

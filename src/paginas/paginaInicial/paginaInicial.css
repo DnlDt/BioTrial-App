@@ -1,0 +1,59 @@
+.PaginaInicial_resumo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.PaginaInicial_card {
+  border-radius: 8px;
+  padding: 10px 4px;
+  color: var(--cor-texto-claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+
+.PaginaInicial_card strong {
+  font-size: 22px;
+}
+
+.PaginaInicial_card-sucesso {
+  background-color: var(--cor-sucesso);
+}
+
+.PaginaInicial_card-total {
+  background-color: #111;
+}
+
+.PaginaInicial_card-falha {
+  background-color: var(--cor-erro);
+}
+
+.PaginaInicial_recentes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.PaginaInicial_recentes_topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.PaginaInicial_recentes_topo a {
+  color: var(--cor-primaria);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.PaginaInicial_item {
+  cursor: pointer;
+}
+
+.PaginaInicial_vazio {
+  text-align: center;
+  color: var(--cor-cinza);
+  margin-top: 24px;
+}

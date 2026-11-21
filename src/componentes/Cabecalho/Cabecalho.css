@@ -1,7 +1,21 @@
 .Cabecalho_root {
-    background-color: var(--cor-primaria);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 8px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.Cabecalho_menu {
+  cursor: pointer;
+}
+
+.Cabecalho_titulo {
+  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-size: 24px;
+  cursor: pointer;
 }

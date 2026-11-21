@@ -1,0 +1,57 @@
+.CardTeste_root {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.CardTeste_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.CardTeste_codigo {
+  font-weight: bold;
+  font-size: 13px;
+  color: var(--cor-cinza);
+}
+
+.CardTeste_info h3 {
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+
+.CardTeste_detalhes {
+  font-size: 13px;
+  color: #555;
+}
+
+.CardTeste_resultado {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.CardTeste_resultado-sucesso {
+  color: var(--cor-sucesso);
+}
+
+.CardTeste_resultado-falha {
+  color: var(--cor-erro);
+}
+
+.CardTeste_resultado-andamento {
+  color: var(--cor-aviso);
+}
+
+.CardTeste_acoes {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}

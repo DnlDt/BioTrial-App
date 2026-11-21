@@ -1,10 +1,12 @@
 .Avatar_root {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background-color: var(--cor-cinza);
+  background-color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cor-texto-claro);
+  color: var(--cor-texto-padrao);
+  font-weight: bold;
+  cursor: pointer;
 }
